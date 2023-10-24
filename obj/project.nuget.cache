@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "fdH8/AgdplIcyathErOKoGuI/WRCktjCqjqDIzQm23cQNv1znv0z2sB21EjKRgwBKIWs0QtcisiS4Hrvcyld3w==",
+  "dgSpecHash": "ljWdsLxRvXCB8ppB2tqOo2KIZtht99G/bPai+0GUGXNFmUniKaDSJydE7TS9iUvVDoouHg9sIcZ4Kils06Ay5Q==",
   "success": true,
   "projectFilePath": "/Users/yasinpathan/Local Storage/Practice/Net/MVC/EmployeeSalary/EmployeeSalary.csproj",
   "expectedPackageFiles": [
@@ -56,6 +56,8 @@
     "/Users/yasinpathan/.nuget/packages/humanizer.core.zh-cn/2.14.1/humanizer.core.zh-cn.2.14.1.nupkg.sha512",
     "/Users/yasinpathan/.nuget/packages/humanizer.core.zh-hans/2.14.1/humanizer.core.zh-hans.2.14.1.nupkg.sha512",
     "/Users/yasinpathan/.nuget/packages/humanizer.core.zh-hant/2.14.1/humanizer.core.zh-hant.2.14.1.nupkg.sha512",
+    "/Users/yasinpathan/.nuget/packages/microsoft.aspnetcore.mvc.razor.extensions/6.0.0/microsoft.aspnetcore.mvc.razor.extensions.6.0.0.nupkg.sha512",
+    "/Users/yasinpathan/.nuget/packages/microsoft.aspnetcore.mvc.razor.runtimecompilation/7.0.11/microsoft.aspnetcore.mvc.razor.runtimecompilation.7.0.11.nupkg.sha512",
     "/Users/yasinpathan/.nuget/packages/microsoft.aspnetcore.razor.language/6.0.11/microsoft.aspnetcore.razor.language.6.0.11.nupkg.sha512",
     "/Users/yasinpathan/.nuget/packages/microsoft.bcl.asyncinterfaces/6.0.0/microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
     "/Users/yasinpathan/.nuget/packages/microsoft.build/17.3.2/microsoft.build.17.3.2.nupkg.sha512",

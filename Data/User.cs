@@ -9,8 +9,10 @@ public class User : BaseEntity
     [Required]
     public string? Name { get; set; }
 
-    public int PhoneNumber { get; set; }
+    [Required]
+    public long PhoneNumber { get; set; }
 
+    [Required, DataType(DataType.Password)]
     public string? Password { get; set; }
 
     [DataType(DataType.Date)]
@@ -19,9 +21,4 @@ public class User : BaseEntity
     [DataType(DataType.Date)]
     [Required]
     public DateTime DateOfJoining { get; set; } = DateTime.Now;
-
-    [ForeignKey("Address")]
-    public int? AddressId { get; set; }
-
-    public Address? Address { get; set; }
 }

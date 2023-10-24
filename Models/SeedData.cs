@@ -19,14 +19,41 @@ namespace EmployeeSalary.Models
                 {
                     var user = new User()
                     {
-                        Name = "Admin",
-                        PhoneNumber = 0,
+                        Name = "admin@gmail.com",
+                        PhoneNumber = 9999999999,
                         DateOfBirth = DateTime.Now.AddYears(-10),
                         DateOfJoining = DateTime.Now,
-                        AddressId = 0
+                        Password = "admin"
                     };
 
+                    await context.Users.AddAsync(user);
+                    await context.SaveChangesAsync();
+
+                    if (!await context.UserRoles.AnyAsync())
+                    {
+                        var roles = new UserRole()
+                        {
+                            Role = "Admin"
+                        };
+                        await context.UserRoles.AddAsync(roles);
+                        await context.SaveChangesAsync();
+
+                        if (!await context.UserRoleMappings.AnyAsync())
+                        {
+                            var userRoleMapping = new UserRoleMapping()
+                            {
+                                UserId = user.Id,
+                                RoleId = roles.Id
+                            };
+
+                            await context.UserRoleMappings.AddAsync(userRoleMapping);
+                            await context.SaveChangesAsync();
+                        }
+                    }
                 }
+
+
+
             }
         }
     }

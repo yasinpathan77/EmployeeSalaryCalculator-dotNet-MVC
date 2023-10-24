@@ -5,12 +5,20 @@
       "PackagePath": "staticwebassets/EmployeeSalary.bundle.scp.css"
     },
     {
+      "Id": "/Users/yasinpathan/Local Storage/Practice/Net/MVC/EmployeeSalary/wwwroot/css/_AdminLayout.css",
+      "PackagePath": "staticwebassets/css/_AdminLayout.css"
+    },
+    {
       "Id": "/Users/yasinpathan/Local Storage/Practice/Net/MVC/EmployeeSalary/wwwroot/css/site.css",
       "PackagePath": "staticwebassets/css/site.css"
     },
     {
       "Id": "/Users/yasinpathan/Local Storage/Practice/Net/MVC/EmployeeSalary/wwwroot/favicon.ico",
       "PackagePath": "staticwebassets/favicon.ico"
+    },
+    {
+      "Id": "/Users/yasinpathan/Local Storage/Practice/Net/MVC/EmployeeSalary/wwwroot/images/login.jpg",
+      "PackagePath": "staticwebassets/images/login.jpg"
     },
     {
       "Id": "/Users/yasinpathan/Local Storage/Practice/Net/MVC/EmployeeSalary/wwwroot/js/site.js",

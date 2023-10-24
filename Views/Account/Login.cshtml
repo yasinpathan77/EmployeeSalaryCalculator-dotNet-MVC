@@ -1,0 +1,81 @@
+@model LoginModel
+
+@{
+    Layout = "_ScriptsLayout";
+}
+
+<!-- Section: Design Block -->
+
+
+<div class="row gx-lg-5 align-items-center justify-content-center set-container">
+    <div class="col-lg-6 mb-5 mb-lg-0">
+        <h1 class="my-5 display-3 fw-bold ls-tight login-header">
+            <span class="text-primary">EMPLOYEE</span> <br>
+            SALARY
+        </h1>
+    </div>
+
+    <div class="col-lg-6 mb-5 mb-lg-0">
+        <div class="card">
+            <div class="card-body py-5 px-md-5">
+                <form asp-action="Login" method="post">
+                    <!-- 2 column grid layout with text inputs for the first and last names -->
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                    <!-- Email input -->
+                    <div class="form-outline mb-4">
+                        <label asp-for="PhoneNumber" class="form-label"></label>
+                        <input asp-for="PhoneNumber" class="form-control" />
+                        <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+                    </div>
+
+                    <!-- Password input -->
+                    <div class="form-outline mb-4">
+                        <label asp-for="Password" class="form-label"></label>
+                        <input asp-for="Password" class="form-control" />
+                        <span asp-validation-for="Password" class="text-danger"></span>
+                    </div>
+
+                    @if (!string.IsNullOrEmpty(Model.ErrorMessage))
+                    {
+                        <div class="form-outline mb-4">
+                            <p class="text-danger">@Model.ErrorMessage</p>
+                        </div>
+                    }
+
+                    <!-- Submit button -->
+                    <input type="submit" value="Log In" class="btn btn-primary" />
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Jumbotron -->
+
+<!-- Section: Design Block -->
+<style>
+    body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url("https://images.unsplash.com/photo-1526554850534-7c78330d5f90?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3538&q=80");
+    }
+
+    .set-container {
+        width: 80%;
+    }
+
+    .login-header {
+        letter-spacing: 0.5rem;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+</style>
+
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

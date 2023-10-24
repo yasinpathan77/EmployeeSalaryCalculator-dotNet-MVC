@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "d2LayWJfOseYbxhBA1QW7xfBPo5dRRmaYbAcuD1HKvk=",
+  "Hash": "5cw6EPpWiR3YWwffNaGjTxPsv2QB0giXtzuGM81CKbU=",
   "Source": "EmployeeSalary",
   "BasePath": "_content/EmployeeSalary",
   "Mode": "Default",
@@ -51,6 +51,23 @@
       "OriginalItemSpec": "/Users/yasinpathan/Local Storage/Practice/Net/MVC/EmployeeSalary/obj/Debug/net7.0/scopedcss/projectbundle/EmployeeSalary.bundle.scp.css"
     },
     {
+      "Identity": "/Users/yasinpathan/Local Storage/Practice/Net/MVC/EmployeeSalary/wwwroot/css/_AdminLayout.css",
+      "SourceId": "EmployeeSalary",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/yasinpathan/Local Storage/Practice/Net/MVC/EmployeeSalary/wwwroot/",
+      "BasePath": "_content/EmployeeSalary",
+      "RelativePath": "css/_AdminLayout.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/_AdminLayout.css"
+    },
+    {
       "Identity": "/Users/yasinpathan/Local Storage/Practice/Net/MVC/EmployeeSalary/wwwroot/css/site.css",
       "SourceId": "EmployeeSalary",
       "SourceType": "Discovered",
@@ -83,6 +100,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/favicon.ico"
+    },
+    {
+      "Identity": "/Users/yasinpathan/Local Storage/Practice/Net/MVC/EmployeeSalary/wwwroot/images/login.jpg",
+      "SourceId": "EmployeeSalary",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/yasinpathan/Local Storage/Practice/Net/MVC/EmployeeSalary/wwwroot/",
+      "BasePath": "_content/EmployeeSalary",
+      "RelativePath": "images/login.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/login.jpg"
     },
     {
       "Identity": "/Users/yasinpathan/Local Storage/Practice/Net/MVC/EmployeeSalary/wwwroot/js/site.js",

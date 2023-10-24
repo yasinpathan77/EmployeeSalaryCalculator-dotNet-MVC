@@ -1,6 +1,7 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using EmployeeSalary.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace EmployeeSalary.Controllers;
 
@@ -15,6 +16,7 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
+
         return View();
     }
 

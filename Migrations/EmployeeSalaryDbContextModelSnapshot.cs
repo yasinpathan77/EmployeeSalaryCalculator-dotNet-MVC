@@ -41,7 +41,12 @@ namespace EmployeeSalary.Migrations
                     b.Property<string>("State")
                         .HasColumnType("TEXT");
 
+                    b.Property<int>("UserId")
+                        .HasColumnType("INTEGER");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("Addresses");
                 });
@@ -169,9 +174,6 @@ namespace EmployeeSalary.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<int?>("AddressId")
-                        .HasColumnType("INTEGER");
-
                     b.Property<DateTime>("Created")
                         .HasColumnType("TEXT");
 
@@ -189,16 +191,26 @@ namespace EmployeeSalary.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Password")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<int>("PhoneNumber")
+                    b.Property<long>("PhoneNumber")
                         .HasColumnType("INTEGER");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("AddressId");
-
                     b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("EmployeeSalary.Data.Address", b =>
+                {
+                    b.HasOne("Namespace.User", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("EmployeeSalary.Data.LoanPayment", b =>
@@ -238,15 +250,6 @@ namespace EmployeeSalary.Migrations
                     b.Navigation("User");
 
                     b.Navigation("UserRole");
-                });
-
-            modelBuilder.Entity("Namespace.User", b =>
-                {
-                    b.HasOne("EmployeeSalary.Data.Address", "Address")
-                        .WithMany()
-                        .HasForeignKey("AddressId");
-
-                    b.Navigation("Address");
                 });
 #pragma warning restore 612, 618
         }

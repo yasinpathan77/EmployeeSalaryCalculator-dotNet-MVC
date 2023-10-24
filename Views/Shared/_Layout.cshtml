@@ -23,9 +23,24 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home"
+                                asp-action="Privacy">Privacy</a>
                         </li>
                     </ul>
+                </div>
+                <div>
+                    @if (User.Identity!.IsAuthenticated)
+                    {
+                        <div>
+                            <a asp-controller="Account" asp-action="LogOut" class="btn btn-secondary">Log Out</a>
+                        </div>
+                    }
+                    else
+                    {
+                        <div>
+                            <a asp-controller="Account" asp-action="Login" class="btn btn-primary">Log In</a>
+                        </div>
+                    }
                 </div>
             </div>
         </nav>
@@ -35,12 +50,6 @@
             @RenderBody()
         </main>
     </div>
-
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2023 - EmployeeSalary - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
-    </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
